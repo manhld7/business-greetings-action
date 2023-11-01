@@ -11,7 +11,7 @@ on:
     branches:
       - main
 jobs:
-  build-and-test-1:
+  run-custom-action:
     runs-on: ubuntu-latest
     steps:
       - name: Run custom action
