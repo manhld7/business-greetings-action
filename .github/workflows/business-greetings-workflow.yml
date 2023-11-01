@@ -15,4 +15,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run custom action
-        uses: manhld7/business-greetings-action@main
+        uses: manhld7/business-greetings-action@
