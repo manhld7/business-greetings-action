@@ -1,3 +1,18 @@
-steps:
-  - name: Run custom action
-    uses: manhld7/business-greetings-action@main
+name: parallel-job-example
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+jobs:
+  run-custom-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run custom action
+        uses: manhld7/business-greetings-action@main
